@@ -39,7 +39,8 @@ def index():
             <title>Some HTML in here</title>
         </head>
         <body>
-            <h1>Look ma! HTML!</h1>
+            <h1>課題</h1>
+              <p>これはHTMLです。</p>
         </body>
     </html>
     """
@@ -47,4 +48,4 @@ def index():
 
 @app.post("/present")
 async def new_naming(present):
-    return {"response": f"サーバです。メリークリスマス！ {present}ありがとう。お返しはキャンディーです。"}
+    return {"response": f"サーバです。トリックオアトリート！ {present}ありがとう。お返しはキャンディーです。"}
